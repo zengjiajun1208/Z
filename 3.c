@@ -1,5 +1,10 @@
 #include<stdio.h>
+int MOtify(int a, int b);
 int main()
 {
-	printf("hello world");
 }
+int MOtify(int a,int b)
+{
+return a*b
+}
+
