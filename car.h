@@ -32,4 +32,23 @@ for(i=0;i<car_count;i++)
 }
 
 
+double get_money(int time) {
+    if (time <= 0) return 0;
+    return time * 5.0;
+}
 
+void add() {
+    if (car_count >= 50) {
+        printf("停车场已满！\n");
+        return;
+    }
+
+    printf("请输入车牌号：\n");
+    scanf("%s", vehicle[car_count].num);
+    printf("请输入停车时间（小时）：\n");
+    scanf("%d", &vehicle[car_count].time);
+    printf("请输入停车位编号：\n" );
+    scanf("%d", &vehicle[car_count].address);
+    car_count++;
+    printf("车辆入库成功！\n");
+}
