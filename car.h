@@ -28,8 +28,22 @@ for(i=0;i<car_count;i++)
 		}
 		car_count--;
 		printf("第%d辆车已出库",address);
-        }
+	}
 }
+desplay_all()
+{
+	if(car_count==0)
+	{
+		printf("No vehicles in the parking lot\n");
+	        return ;
+	}
+printf("=====Parking Lot Vehicle Information=====\n");	
+printf("Parking Space No.\tLicense Plate\tParking Duration\tFee\n");
+for(int i=0;i<car_count:i++)
+{
+	printf("%d\t%s\t%d\t%.2lf\n",vehicle[i].address,vehicle[i].num,vehicle[i].time,get_money(vehicle[i].time);
+			}
+			}
 
 
 double get_money(int time) {
