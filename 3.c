@@ -32,3 +32,4 @@ int MOtify(int a,int b)
 return a*b
 }
 
+returm 0;
